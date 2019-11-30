@@ -42,7 +42,6 @@ circleProgress_two.complete(showProgressCircle);
 
 const removeProgressBar = textProgressBars => {
   for (let item of textProgressBars) {
-    console.log(item.textContent);
     if (item.textContent === "0%") {
       item.parentElement.insertAdjacentHTML(
         "afterbegin",
