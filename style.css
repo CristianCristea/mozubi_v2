@@ -19,6 +19,9 @@ h1 {
 .topic-title {
   font-weight: 400; }
 
+.courses p {
+  font-size: 1.2rem; }
+
 .sidebar {
   width: 200px;
   height: 100vh;
@@ -68,7 +71,11 @@ main {
   margin-left: 200px;
   transition: margin-left 0.4s; }
   main header {
-    margin-top: 5rem; }
+    margin-top: 1rem;
+    margin-bottom: 10rem; }
+
+.first-topic {
+  height: 60vh; }
 
 .course-exam {
   color: tomato; }
