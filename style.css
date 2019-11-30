@@ -9,12 +9,27 @@ ul {
 .hamburger:focus {
   outline: none; }
 
+.hamburger-index {
+  position: absolute;
+  top: 10.2rem; }
+
 body {
-  font-family: "Roboto", "sans-serif";
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif; }
 
 h1 {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
+
+.sidebar {
+  font-family: "Montserrat", sans-serif; }
 
 .topic-title {
   font-weight: 400; }
@@ -26,12 +41,12 @@ h1 {
   color: inherit; }
 
 .sidebar {
-  width: 200px;
+  width: 240px;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #333333;
+  background-color: #1c1d1d;
   transition: margin-left 0.4s; }
   .sidebar .logo {
     width: 100px; }
@@ -56,13 +71,19 @@ h1 {
         margin-bottom: 3rem; }
     .sidebar .navbar a {
       color: #fff;
-      font-size: 1.1rem;
-      font-weight: 500; }
+      font-size: 20px;
+      display: inline-block;
+      font-weight: 600;
+      border-bottom: 1px solid #343535;
+      width: 100%;
+      padding-bottom: 15px;
+      text-transform: uppercase; }
       .sidebar .navbar a:hover {
         text-decoration: none; }
 
 .top-bar {
   padding: 1rem;
+  margin-bottom: 4rem;
   text-align: center;
   box-shadow: 1px 0 0 2px rgba(0, 0, 0, 0.4); }
 
@@ -71,11 +92,11 @@ h1 {
   z-index: 100; }
 
 .container {
-  width: calc(90% - 200px);
+  width: calc(90% - $sidebar_width);
   max-width: 1000px; }
 
 main {
-  margin-left: 200px;
+  margin-left: 240px;
   transition: margin-left 0.4s; }
   main header {
     margin-top: 1rem;
@@ -83,16 +104,14 @@ main {
 
 .full-width-bg {
   margin-bottom: 18rem; }
+  .full-width-bg:last-of-type {
+    margin-bottom: 10rem; }
 
 .course-exam {
   color: tomato; }
 
-.active {
-  border-left: 5px solid tomato;
-  border-right: 5px solid tomato; }
-
 .hide-sidebar {
-  margin-left: -200px; }
+  margin-left: -240px; }
 
 .show-main {
   margin-left: 0; }
@@ -121,5 +140,38 @@ footer {
   padding: 2rem;
   margin-top: 10rem;
   text-align: center; }
+
+.article-title {
+  font-size: 2.4rem;
+  display: inline-block;
+  font-weight: 500; }
+
+.article-chapter-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 5rem; }
+
+.article-text {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.8; }
+
+.article-header {
+  margin-top: 3.6rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center; }
+  .article-header .fa-bookmark {
+    font-size: 2rem;
+    margin-left: auto; }
+    .article-header .fa-bookmark:hover {
+      cursor: pointer; }
+
+.article-hamburger {
+  position: absolute;
+  top: 3rem; }
+
+.container-article {
+  max-width: 680px; }
 
 /*# sourceMappingURL=style.css.map */
