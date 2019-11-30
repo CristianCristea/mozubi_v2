@@ -28,29 +28,14 @@ let circleProgress_one = new progressBar({
   duration: 2000, //ms
   completeDuration: 500 //ms
 });
-let circleProgress_two = new progressBar({
-  type: "circle", //top, circle
-  targetId: "roundProgressTwo",
-  textId: "textProgressTwo",
-  value: 0, //final value
-  duration: 2000, //ms
-  completeDuration: 500 //ms
-});
+// let circleProgress_two = new progressBar({
+//   type: "circle", //top, circle
+//   targetId: "roundProgressTwo",
+//   textId: "textProgressTwo",
+//   value: 0, //final value
+//   duration: 2000, //ms
+//   completeDuration: 500 //ms
+// });
 
-circleProgress_one.complete(showProgressCircle);
-circleProgress_two.complete(showProgressCircle);
-
-const removeProgressBar = textProgressBars => {
-  for (let item of textProgressBars) {
-    if (item.textContent === "0%") {
-      item.parentElement.insertAdjacentHTML(
-        "afterbegin",
-        "<p style='margin: 10rem 0 0 1rem;'>Not started</p>"
-      );
-      item.remove();
-    }
-  }
-};
-setTimeout(() => {
-  removeProgressBar(textProgressBarElements);
-}, 100);
+circleProgress_one.complete();
+// circleProgress_two.complete();

@@ -33,6 +33,11 @@ h1 {
   p {
     font-size: 1.2rem;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 // sidebar
@@ -97,6 +102,12 @@ h1 {
   box-shadow: 1px 0 0 2px rgba($color: #000000, $alpha: 0.4);
 }
 
+// hero
+.hero {
+  background-color: #fff;
+  z-index: 100;
+}
+
 // layout
 .container {
   width: calc(90% - 200px);
@@ -113,8 +124,13 @@ main {
   }
 }
 
-.first-topic {
-  height: 60vh;
+// .first-topic {
+//   height: 55vh;
+// }
+
+.full-width-bg {
+  // height: 55vh;
+  margin-bottom: 18rem;
 }
 
 // topics
@@ -138,6 +154,7 @@ main {
 
 .topic-progress {
   position: relative;
+  margin-top: 5rem;
 
   .text-progress {
     position: absolute;
@@ -158,4 +175,15 @@ main {
     height: 100px;
     transform: rotate(-90deg);
   }
+}
+
+.progressCirclePlaceholder {
+  margin: 5rem 0 0 1rem;
+}
+
+// footer
+footer {
+  padding: 2rem;
+  margin-top: 10rem;
+  text-align: center;
 }

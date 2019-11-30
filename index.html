@@ -35,23 +35,26 @@
         </ul>
       </nav>
     </aside>
-    <main id="main" class="show-main">
-      <div class="top-bar"><p class="lead m-0">90 days left</p></div>
-      <button
-        class="hamburger hamburger--arrow mt-2"
-        type="button"
-        id="hamburger-icon"
-      >
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
 
-      <!-- header -->
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <header><h1 class="display-3">Web Developer Track</h1></header>
+    <main id="main" class="show-main">
+      <div class="sticky-top hero">
+        <div class="top-bar"><p class="lead m-0">90 days left</p></div>
+        <button
+          class="hamburger hamburger--arrow mt-2"
+          type="button"
+          id="hamburger-icon"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <!-- header -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <header><h1 class="display-3">Web Developer Track</h1></header>
+            </div>
           </div>
         </div>
       </div>
@@ -86,6 +89,109 @@
                   <li>Status</li>
                 </ul>
               </div>
+
+              <div class="col-12 mt-2">
+                <ul class="courses">
+                  <li>
+                    <a class="d-flex" href="#">
+                      <!-- <p class="mr-5">BD101</p> -->
+                      <p class="flex-grow-1">Programming Foundations</p>
+                      <p class="text-success">Read</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex" href="#">
+                      <!-- <p class="mr-5">BD102</p> -->
+                      <p class="flex-grow-1">Object Oriented Programming</p>
+                      <p class="text-success">Read</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex" href="#">
+                      <!-- <p class="mr-5">BD103</p> -->
+                      <p class="flex-grow-1">Ruby Foundations: RegEx</p>
+                      <p>Not read</p>
+                    </a>
+                  </li>
+                  <li class="course-exam">
+                    <a class="d-flex" href="#">
+                      <!-- <p class="mr-5 course-exam">EX101</p> -->
+                      <p class="flex-grow-1 course-exam">
+                        Back End Development Exam
+                      </p>
+                      <p class="course-exam">Not passed</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="full-width-bg">
+        <div class="container">
+          <section class="topic row align-items-center">
+            <div class="col-2">
+              <p class="progressCirclePlaceholder">Not started</p>
+            </div>
+            <div class="col-10">
+              <div class="col-12 mt-5">
+                <h2 class="topic-title">Front End Development</h2>
+              </div>
+              <div class="col-12 mt-3">
+                <ul class="d-flex">
+                  <!-- <li class="mr-4">Cours No.</li> -->
+                  <li class="flex-grow-1">Name</li>
+                  <li>Status</li>
+                </ul>
+              </div>
+              <div class="col-12 mt-2">
+                <ul class="courses">
+                  <li class="d-flex">
+                    <!-- <p class="mr-5">FD101</p> -->
+                    <p class="flex-grow-1">HTML5 Basics</p>
+                    <p>Not read</p>
+                  </li>
+                  <li class="d-flex">
+                    <!-- <p class="mr-5">FD102</p> -->
+                    <p class="flex-grow-1">CSS3 Basics</p>
+                    <p>Not read</p>
+                  </li>
+                  <li class="d-flex">
+                    <!-- <p class="mr-5">FD103</p> -->
+                    <p class="flex-grow-1">Flexbox</p>
+                    <p>Not read</p>
+                  </li>
+                  <li class="d-flex course-exam">
+                    <!-- <p class="mr-5">EX201</p> -->
+                    <p class="flex-grow-1">Front End Development Exam</p>
+                    <p>Not passed</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="full-width-bg">
+        <div class="container">
+          <section class="topic row align-items-center">
+            <div class="col-2">
+              <p class="progressCirclePlaceholder">Not started</p>
+            </div>
+            <div class="col-10">
+              <div class="col-12 mb-5">
+                <h2 class="topic-title">Back End Development</h2>
+              </div>
+              <div class="col-12 mt-3">
+                <ul class="d-flex">
+                  <!-- <li class="mr-4">Cours No.</li> -->
+                  <li class="flex-grow-1">Name</li>
+                  <li>Status</li>
+                </ul>
+              </div>
               <div class="col-12 mt-2">
                 <ul class="courses">
                   <li class="d-flex">
@@ -108,7 +214,7 @@
                     <p class="flex-grow-1 course-exam">
                       Back End Development Exam
                     </p>
-                    <p class="course-exam">Not done</p>
+                    <p class="course-exam">Not passed</p>
                   </li>
                 </ul>
               </div>
@@ -116,63 +222,8 @@
           </section>
         </div>
       </div>
-      <div class="container">
-        <section class="topic row align-items-center">
-          <div class="col-2">
-            <div class="topic-progress" id="progressTwo">
-              <div class="text-progress" id="textProgressTwo">0%</div>
-              <div class="svg">
-                <svg height="100%" width="100%">
-                  <circle
-                    class="round-progress"
-                    id="roundProgressTwo"
-                    cx="50"
-                    cy="50"
-                    r="45"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="col-10">
-            <div class="col-12 mt-5">
-              <h2 class="topic-title">Front End Development</h2>
-            </div>
-            <div class="col-12 mt-3">
-              <ul class="d-flex">
-                <!-- <li class="mr-4">Cours No.</li> -->
-                <li class="flex-grow-1">Name</li>
-                <li>Status</li>
-              </ul>
-            </div>
-            <div class="col-12 mt-2">
-              <ul class="courses">
-                <li class="d-flex">
-                  <!-- <p class="mr-5">FD101</p> -->
-                  <p class="flex-grow-1">HTML5 Basics</p>
-                  <p>Not read</p>
-                </li>
-                <li class="d-flex">
-                  <!-- <p class="mr-5">FD102</p> -->
-                  <p class="flex-grow-1">CSS3 Basics</p>
-                  <p>Not read</p>
-                </li>
-                <li class="d-flex">
-                  <!-- <p class="mr-5">FD103</p> -->
-                  <p class="flex-grow-1">Flexbox</p>
-                  <p>Not read</p>
-                </li>
-                <li class="d-flex course-exam">
-                  <!-- <p class="mr-5">EX201</p> -->
-                  <p class="flex-grow-1">Front End Development Exam</p>
-                  <p>Not done</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
+
+      <footer><p>&copy; Mozubi</p></footer>
     </main>
 
     <!-- Optional JavaScript -->

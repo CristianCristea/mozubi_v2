@@ -21,6 +21,9 @@ h1 {
 
 .courses p {
   font-size: 1.2rem; }
+.courses a {
+  text-decoration: none;
+  color: inherit; }
 
 .sidebar {
   width: 200px;
@@ -63,6 +66,10 @@ h1 {
   text-align: center;
   box-shadow: 1px 0 0 2px rgba(0, 0, 0, 0.4); }
 
+.hero {
+  background-color: #fff;
+  z-index: 100; }
+
 .container {
   width: calc(90% - 200px);
   max-width: 1000px; }
@@ -74,8 +81,8 @@ main {
     margin-top: 1rem;
     margin-bottom: 10rem; }
 
-.first-topic {
-  height: 55vh; }
+.full-width-bg {
+  margin-bottom: 18rem; }
 
 .course-exam {
   color: tomato; }
@@ -91,7 +98,8 @@ main {
   margin-left: 0; }
 
 .topic-progress {
-  position: relative; }
+  position: relative;
+  margin-top: 5rem; }
   .topic-progress .text-progress {
     position: absolute;
     top: 40px;
@@ -105,5 +113,13 @@ main {
     width: 100px;
     height: 100px;
     transform: rotate(-90deg); }
+
+.progressCirclePlaceholder {
+  margin: 5rem 0 0 1rem; }
+
+footer {
+  padding: 2rem;
+  margin-top: 10rem;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
