@@ -14,14 +14,14 @@
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
       rel="stylesheet"
     />
-
+    <link href="hamburgers.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 
     <title>Hello, world!</title>
   </head>
 
   <body>
-    <aside class="sidebar">
+    <aside id="sidebar" class="sidebar">
       <nav>
         <ul class="navbar">
           <li>
@@ -35,8 +35,17 @@
         </ul>
       </nav>
     </aside>
-    <main>
-      <div class="top-bar">90 days left</div>
+    <main id="main">
+      <div class="top-bar"><p class="lead m-0">90 days left</p></div>
+      <button
+        class="hamburger hamburger--arrow is-active mt-2"
+        type="button"
+        id="hamburger-icon"
+      >
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -44,33 +53,35 @@
           </div>
         </div>
         <section class="topic row">
-          <div class="col-12 mt-5"><h4>Back End Development</h4></div>
+          <div class="col-12 mt-5">
+            <h4 class="topic-title">Back End Development</h4>
+          </div>
           <div class="col-12 mt-3">
-            <ul class="d-flex course-head">
-              <li class="mr-4">Cours No.</li>
+            <ul class="d-flex">
+              <!-- <li class="mr-4">Cours No.</li> -->
               <li class="flex-grow-1">Name</li>
               <li>Status</li>
             </ul>
           </div>
           <div class="col-12 mt-2">
             <ul>
-              <li class="d-flex course-head">
-                <p class="mr-5">BD101</p>
+              <li class="d-flex">
+                <!-- <p class="mr-5">BD101</p> -->
                 <p class="flex-grow-1">Programming Foundations</p>
-                <p>Read</p>
+                <p class="text-success">Read</p>
               </li>
-              <li class="d-flex course-head">
-                <p class="mr-5">BD102</p>
+              <li class="d-flex">
+                <!-- <p class="mr-5">BD102</p> -->
                 <p class="flex-grow-1">Object Oriented Programming</p>
-                <p>Read</p>
+                <p class="text-success">Read</p>
               </li>
-              <li class="d-flex course-head">
-                <p class="mr-5">BD103</p>
+              <li class="d-flex">
+                <!-- <p class="mr-5">BD103</p> -->
                 <p class="flex-grow-1">Ruby Foundations: RegEx</p>
                 <p>Not read</p>
               </li>
               <li class="d-flex course-exam">
-                <p class="mr-5 course-exam">EX101</p>
+                <!-- <p class="mr-5 course-exam">EX101</p> -->
                 <p class="flex-grow-1 course-exam">Back End Development Exam</p>
                 <p class="course-exam">Not done</p>
               </li>
@@ -79,34 +90,34 @@
         </section>
         <section class="topic row">
           <div class="col-12 mt-5">
-            <h4>Front End Development</h4>
+            <h4 class="topic-title">Front End Development</h4>
           </div>
           <div class="col-12 mt-3">
-            <ul class="d-flex course-head">
-              <li class="mr-4">Cours No.</li>
+            <ul class="d-flex">
+              <!-- <li class="mr-4">Cours No.</li> -->
               <li class="flex-grow-1">Name</li>
               <li>Status</li>
             </ul>
           </div>
           <div class="col-12 mt-2">
             <ul>
-              <li class="d-flex course-head">
-                <p class="mr-5">FD101</p>
+              <li class="d-flex">
+                <!-- <p class="mr-5">FD101</p> -->
                 <p class="flex-grow-1">HTML5 Basics</p>
                 <p>Not read</p>
               </li>
-              <li class="d-flex course-head">
-                <p class="mr-5">FD102</p>
+              <li class="d-flex">
+                <!-- <p class="mr-5">FD102</p> -->
                 <p class="flex-grow-1">CSS3 Basics</p>
                 <p>Not read</p>
               </li>
-              <li class="d-flex course-head">
-                <p class="mr-5">FD103</p>
+              <li class="d-flex">
+                <!-- <p class="mr-5">FD103</p> -->
                 <p class="flex-grow-1">Flexbox</p>
                 <p>Not read</p>
               </li>
               <li class="d-flex course-exam">
-                <p class="mr-5">EX201</p>
+                <!-- <p class="mr-5">EX201</p> -->
                 <p class="flex-grow-1">Front End Development Exam</p>
                 <p>Not done</p>
               </li>
@@ -129,5 +140,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="bootstrap.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
