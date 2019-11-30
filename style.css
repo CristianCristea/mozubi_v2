@@ -28,6 +28,11 @@ h6 {
 h1 {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
 
+.secondary-text {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6; }
+
 .sidebar {
   font-family: "Montserrat", sans-serif; }
 
@@ -169,9 +174,51 @@ footer {
 
 .article-hamburger {
   position: absolute;
-  top: 3rem; }
+  top: 3.4rem; }
 
 .container-article {
   max-width: 680px; }
+
+.flashcard-form {
+  /* HTML5 Boilerplate accessible hidden styles */
+  /* One radio button per line */
+  /* the basic, unchecked style */
+  /* the checked style using the :checked pseudo class */
+  /* never forget focus styling */ }
+  .flashcard-form [type="radio"] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; }
+  .flashcard-form label {
+    display: block;
+    cursor: pointer;
+    line-height: 2.5;
+    font-size: 1.5em; }
+  .flashcard-form [type="radio"] + span {
+    display: block; }
+  .flashcard-form [type="radio"] + span:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.25em;
+    border-radius: 1em;
+    border: 0.125em solid #fff;
+    box-shadow: 0 0 0 0.15em #000;
+    margin-right: 0.75em;
+    transition: 0.5s ease all; }
+  .flashcard-form [type="radio"]:checked + span:before {
+    background: green;
+    box-shadow: 0 0 0 0.25em #000; }
+  .flashcard-form [type="radio"]:focus + span:after {
+    content: "\0020\2190";
+    font-size: 1.5em;
+    line-height: 1;
+    vertical-align: -0.125em; }
 
 /*# sourceMappingURL=style.css.map */

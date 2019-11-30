@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:300,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+    />
+    <link href="hamburgers.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Hello, world!</title>
+  </head>
+
+  <body>
+    <aside id="sidebar" class="sidebar hide-sidebar">
+      <nav>
+        <ul class="navbar">
+          <li>
+            <a href="/"><img class="logo" src="logo.png" alt=""/></a>
+          </li>
+          <li><a href="/">Courses</a></li>
+          <li><a href="/">Flashcards</a></li>
+          <li><a href="/">Bookmarks</a></li>
+          <li><a href="/">My profil</a></li>
+          <li><a href="/">My exams</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main id="main" class="show-main">
+      <div class="sticky-top hero">
+        <button
+          class="hamburger hamburger--arrow article-hamburger"
+          type="button"
+          id="hamburger-icon"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <!-- header -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <header class="article-header">
+                <h1 class="display-4 article-title">
+                  Programming Foundations Quiz
+                </h1>
+              </header>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="flashcard-body mb-5">
+          <p class="article-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+            animi nam praesentium dolore, pariatur repellat consequuntur. Eaque
+            optio nihil suscipit! Excepturi veniam animi minima modi sunt
+            incidunt neque ipsum reprehenderit!
+          </p>
+        </div>
+
+        <form action="#" class="flashcard-form mb-5">
+          <label for="accessible">
+            <input
+              type="radio"
+              value="accessible"
+              name="quality"
+              id="accessible"
+            />
+            <span>accessible</span>
+          </label>
+
+          <label for="pretty">
+            <input type="radio" value="pretty" name="quality" id="pretty" />
+            <span>pretty</span>
+          </label>
+
+          <label for="accessible-and-pretty">
+            <input
+              type="radio"
+              value="pretty"
+              name="quality"
+              id="accessible-and-pretty"
+              checked
+            />
+            <span>accessible and pretty</span>
+          </label>
+
+          <input
+            type="submit"
+            class="btn btn-outline-success text-uppercase my-5"
+            value="Answer"
+          />
+        </form>
+
+        <div class="alert alert-warning secondary-text" role="alert">
+          <h4 class="secondary-text">Hint</h4>
+          <p>
+            If you leave the page, the Quiz will be noted as failed!
+          </p>
+        </div>
+      </div>
+
+      <footer><p>&copy; Mozubi</p></footer>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="progressBar.js"></script>
+    <script src="tween.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
