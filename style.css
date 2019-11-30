@@ -77,10 +77,26 @@ main {
   border-left: 5px solid tomato;
   border-right: 5px solid tomato; }
 
-.toggle-sidebar {
+.hide-sidebar {
   margin-left: -200px; }
 
-.toggle-main {
+.show-main {
   margin-left: 0; }
+
+.topic-progress {
+  position: relative; }
+  .topic-progress .text-progress {
+    position: absolute;
+    top: 40px;
+    left: 40px; }
+  .topic-progress .round-progress {
+    fill: none;
+    stroke: #29d;
+    stroke-width: 5;
+    stroke-dasharray: 1000; }
+  .topic-progress .svg {
+    width: 100px;
+    height: 100px;
+    transform: rotate(-90deg); }
 
 /*# sourceMappingURL=style.css.map */

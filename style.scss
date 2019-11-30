@@ -117,10 +117,34 @@ main {
   border-right: 5px solid tomato;
 }
 
-.toggle-sidebar {
+.hide-sidebar {
   margin-left: -200px;
 }
 
-.toggle-main {
+.show-main {
   margin-left: 0;
+}
+
+.topic-progress {
+  position: relative;
+
+  .text-progress {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+
+  // progress circle
+  .round-progress {
+    fill: none;
+    stroke: #29d;
+    stroke-width: 5;
+    stroke-dasharray: 1000;
+  }
+
+  .svg {
+    width: 100px;
+    height: 100px;
+    transform: rotate(-90deg);
+  }
 }
